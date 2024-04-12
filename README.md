@@ -1,16 +1,17 @@
-#Vaje01
+# Vaje01
 
-##Avtor
-'[Urh Perčič]'
+## Avtor
+- [Urh Perčič]
+- [63230481]
 
-##Opis
+## Opis
 Projekt Vaje01 vsebuje implementacijo algoritma Successive Over-Relaxation (SOR) za razpršene matrike. Cilj je reševanje tridiagonalnega sistema Ax=b s pomočjo SOR iteracije. Projekt vključuje tudi poseben podatkovni tip RazprsenaMatrika, namenjen učinkovitemu shranjevanju in obdelavi razpršenih matrik.
 
-##Struktura
+## Struktura
 src/Vaje01.jl: Glavna implementacija, vključno s podatkovnimi tipi in funkcijami.
 test/runtests.jl: Testne datoteke za preverjanje pravilnosti algoritmov.
 
-##Uporaba kode
+## Uporaba kode
 Za uporabo kode, najprej vključite modul s pomočjo:
 using .Vaje01
 
@@ -24,6 +25,6 @@ tol = 1e-10
 
 optimal_omega, omegas, iterations = Vaje01.find_optimal_omega(A_scattered, b, x0, tol)
 
-##Poganjanje testov
+## Poganjanje testov
 Za zagon testov odprite Julia in izvedite
 include("test/runtests.jl")
